@@ -28,40 +28,45 @@ public class MainActivity extends AppCompatActivity {
                         "action",
                         R.drawable.apocalipe));
         listaFilmes.add(
-                new Filmes("Apocalipse",
+                new Filmes("Desejos",
                         "Fim do mundo uhull",
                         "action",
-                        R.drawable.apocalipe));
+                        R.drawable.desejos));
+        listaFilmes.add(
+                new Filmes("Dois e Sessenta e Sete",
+                        "Fim do mundo uhull",
+                        "action",
+                        R.drawable.doismilesessetnaesete));
+        listaFilmes.add(
+                new Filmes("Folha",
+                        "Fim do mundo uhull",
+                        "action",
+                        R.drawable.folha));
+        listaFilmes.add(
+                new Filmes("Interrogação",
+                        "Fim do mundo uhull",
+                        "action",
+                        R.drawable.interrogacao));
         listaFilmes.add(
                 new Filmes("Apocalipse",
                         "Fim do mundo uhull",
                         "action",
-                        R.drawable.apocalipe));
+                        R.drawable.medo));
         listaFilmes.add(
                 new Filmes("Apocalipse",
                         "Fim do mundo uhull",
                         "action",
-                        R.drawable.apocalipe));
+                        R.drawable.menina));
         listaFilmes.add(
                 new Filmes("Apocalipse",
                         "Fim do mundo uhull",
                         "action",
-                        R.drawable.apocalipe));
+                        R.drawable.pontabala));
         listaFilmes.add(
                 new Filmes("Apocalipse",
                         "Fim do mundo uhull",
                         "action",
-                        R.drawable.apocalipe));
-        listaFilmes.add(
-                new Filmes("Apocalipse",
-                        "Fim do mundo uhull",
-                        "action",
-                        R.drawable.apocalipe));
-        listaFilmes.add(
-                new Filmes("Apocalipse",
-                        "Fim do mundo uhull",
-                        "action",
-                        R.drawable.apocalipe));
+                        R.drawable.rei_montanha));
 
 
         MyAdapter adapter = new MyAdapter(getApplicationContext(), listaFilmes);
