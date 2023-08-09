@@ -22,11 +22,53 @@ public class MainActivity extends AppCompatActivity {
         idRecyclerView = findViewById(R.id.listaFilmes);
         listaFilmes = new ArrayList<>();
 
+        listaFilmes.add(
+                new Filmes("Apocalipse",
+                        "Fim do mundo uhull",
+                        "action",
+                        R.drawable.apocalipe));
+        listaFilmes.add(
+                new Filmes("Apocalipse",
+                        "Fim do mundo uhull",
+                        "action",
+                        R.drawable.apocalipe));
+        listaFilmes.add(
+                new Filmes("Apocalipse",
+                        "Fim do mundo uhull",
+                        "action",
+                        R.drawable.apocalipe));
+        listaFilmes.add(
+                new Filmes("Apocalipse",
+                        "Fim do mundo uhull",
+                        "action",
+                        R.drawable.apocalipe));
+        listaFilmes.add(
+                new Filmes("Apocalipse",
+                        "Fim do mundo uhull",
+                        "action",
+                        R.drawable.apocalipe));
+        listaFilmes.add(
+                new Filmes("Apocalipse",
+                        "Fim do mundo uhull",
+                        "action",
+                        R.drawable.apocalipe));
+        listaFilmes.add(
+                new Filmes("Apocalipse",
+                        "Fim do mundo uhull",
+                        "action",
+                        R.drawable.apocalipe));
+        listaFilmes.add(
+                new Filmes("Apocalipse",
+                        "Fim do mundo uhull",
+                        "action",
+                        R.drawable.apocalipe));
+
+
         MyAdapter adapter = new MyAdapter(getApplicationContext(), listaFilmes);
 
         idRecyclerView.setLayoutManager(new
                 GridLayoutManager(
-                        getApplicationContext(), 2));
+                getApplicationContext(), 2));
 
         idRecyclerView.setHasFixedSize(true);
         idRecyclerView.setAdapter(adapter);
