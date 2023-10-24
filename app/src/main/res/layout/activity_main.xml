@@ -3,25 +3,67 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#e7ffff"
+    >
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/aa"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lista de filmes"
+        android:text="WELCOME TO LLYBAR"
+        android:textSize="20sp"
+        android:layout_gravity="center"
         android:textStyle="bold"
-        android:textColor="#000"
-        android:textSize="23sp"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="10sp"
-
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
         />
-
-
-        <androidx.recyclerview.widget.RecyclerView
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/listaFilmes"/>
+            android:hint="Email"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/txtEmail"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Password"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/txtPassword"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up here!"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:id="@+id/txtCreate"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="54dp"
+        android:text="LOG IN"
+        android:backgroundTint="#033750"
+        android:textSize="20sp"
+        android:textColor="#2196F3"
+        android:id="@+id/login"
+        android:layout_gravity="center"
+        />
 </LinearLayout>
