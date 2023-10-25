@@ -21,7 +21,7 @@ public class ListPage extends AppCompatActivity {
 
         idRecyclerView = findViewById(R.id.listaLivros);
         listaLivros = new ArrayList<>();
-            listaLivros.add(new Books("Macaco", "Macumbeiraa", "macumbaiada", "Mandela"));
+        listaLivros.add(new Books("Macaco", "Macumbeiraa", "macumbaiada", "Mandela"));
 
         MyAdapter adapter = new MyAdapter(getApplicationContext(), listaLivros);
 
