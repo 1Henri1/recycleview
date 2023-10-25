@@ -4,7 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,11 +14,11 @@ import java.util.List;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     private Context mContexto;
-    private List<Filmes> lstFilmes;
+    private List<Books> lstBooks;
 
-    public MyAdapter(Context mContexto, List<Filmes> lstFilmes) {
+    public MyAdapter(Context mContexto, List<Books> lstFilmes) {
         this.mContexto = mContexto;
-        this.lstFilmes = lstFilmes;
+        this.lstBooks = lstFilmes;
     }
 
     @NonNull
@@ -29,7 +28,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         View view;
 
                 LayoutInflater inflater = LayoutInflater.from(mContexto);
-                view = inflater.inflate(R.layout.modelo_filmes, parent, false);
+                view = inflater.inflate(R.layout.modelo_livros, parent, false);
 
         return new ViewHolder(view);
     }
@@ -37,26 +36,29 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-    holder.idTituloFilmes.setText(lstFilmes.get(position).getTitulo());
-    holder.idImageFilmes.setImageResource(lstFilmes.get(position).getImage());
+    holder.idTituloLivros.setText(lstBooks.get(position).getTitulo());
+    holder.idGeneroLivros.setText(lstBooks.get(position).getGenero());
+    holder.idAutorLivros.setText(lstBooks.get(position).getAutor());
+    holder.idEditoraLivros.setText(lstBooks.get(position).getEditora());
     }
 
     @Override
     public int getItemCount() {
-        return lstFilmes.size();
+        return lstBooks.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView idTituloFilmes;
-        ImageView idImageFilmes;
-        CardView idCardFilmes;
+        TextView idTituloLivros, idEditoraLivros, idAutorLivros, idGeneroLivros;
+        CardView idCardLivros;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-        idTituloFilmes = itemView.findViewById(R.id.idTituloFilmes);
-        idCardFilmes = itemView.findViewById(R.id.idCardBooks);
-        idImageFilmes = itemView.findViewById(R.id.idImgFilmes);
+        idTituloLivros = itemView.findViewById(R.id.Titulo);
+        idEditoraLivros = itemView.findViewById(R.id.Editora);
+        idAutorLivros = itemView.findViewById(R.id.Autor);
+        idGeneroLivros = itemView.findViewById(R.id.Genero);
+        idCardLivros = itemView.findViewById(R.id.idCardBooks);
         }
     }
 
